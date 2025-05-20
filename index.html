@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tombol Buka Video</title>
+</head>
+<body>
+    <div class="container">
+        <button class="button" id="videoButton">pencet</button>
+    </div>
+    
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <span class="close-button" id="closeButton">&times;</span>
+            <div class="video-container">
+                <!-- Ganti src di bawah dengan URL video Anda -->
+                <video id="myVideo" controls>
+                    <source src="myVideo.mp4" type="video/mp4">
+                </video>
+                
+                <!-- Atau gunakan embed YouTube (uncomment dan sesuaikan link) -->
+                <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
